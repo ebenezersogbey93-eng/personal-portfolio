@@ -222,37 +222,188 @@ header {
 }
 
 
+/* =========================
+   PORTFOLIO UPGRADE
+========================= */
 
+.portfolio-section {
+    text-align: center;
+}
+
+.section-subtitle {
+    color: #0b63ce;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.portfolio-intro {
+    max-width: 650px;
+    margin: -25px auto 45px;
+    color: #667085;
+    font-size: 16px;
+}
+
+
+/* Portfolio Grid */
 
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    text-align: left;
 }
+
+
+/* Portfolio Card */
 
 .portfolio-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
 }
 
-.portfolio-card img {
-    height: 250px;
+
+/* Project Image */
+
+.portfolio-card > img {
+    width: 100%;
+    height: 230px;
     object-fit: cover;
+    transition: 0.4s ease;
 }
 
-.portfolio-card h3 {
-    padding: 20px;
+.portfolio-card:hover > img {
+    transform: scale(1.04);
+}
+
+
+/* Project Content */
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-content h3 {
     color: #102a43;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.portfolio-content p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 
+/* Technologies */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.technologies span {
+    background: #eaf3ff;
+    color: #0b63ce;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* Project Buttons */
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.project-buttons a {
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* Live Demo */
+
+.live-btn {
+    background: #0b63ce;
+    color: white;
+}
+
+.live-btn:hover {
+    background: #083f88;
+}
+
+
+/* GitHub */
+
+.github-btn {
+    border: 1px solid #102a43;
+    color: #102a43;
+    background: white;
+}
+
+.github-btn:hover {
+    background: #102a43;
+    color: white;
+}
+
+
+/* =========================
+   PORTFOLIO RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card > img {
+        height: 220px;
+    }
+
+    .portfolio-content {
+        padding: 20px;
+    }
+
+    .project-buttons a {
+        padding: 10px 14px;
+    }
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     background: #102a43;
@@ -299,6 +450,10 @@ form .btn {
 }
 
 
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     background: #071a2d;
     color: #aaa;
@@ -306,6 +461,10 @@ footer {
     padding: 25px;
 }
 
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
 @media (max-width: 900px) {
 
@@ -410,4 +569,203 @@ footer {
     .contact h2 {
         font-size: 32px;
     }
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    text-align: center;
+    background: #f8fafc;
+}
+
+.skills-intro {
+    max-width: 650px;
+    margin: -25px auto 45px;
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Skills Grid */
+
+.skills-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    text-align: left;
+}
+
+
+/* Skill Card */
+
+.skill-card {
+    background: white;
+    padding: 28px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Skill Header */
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-name h3 {
+    margin: 0;
+
+    color: #102a43;
+    font-size: 20px;
+}
+
+.skill-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf3ff;
+
+    border-radius: 10px;
+
+    font-size: 21px;
+}
+
+.skill-percent {
+    color: #0b63ce;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Skill Bar */
+
+.skill-bar {
+    width: 100%;
+    height: 9px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+}
+
+
+/* Progress */
+
+.skill-progress {
+    height: 100%;
+
+    width: 0;
+
+    background: linear-gradient(
+        90deg,
+        #0b63ce,
+        #38bdf8
+    );
+
+    border-radius: 20px;
+
+    animation: skillAnimation 1.8s ease forwards;
+}
+
+
+/* Individual Skill Levels */
+
+.skill-progress.html {
+    --skill-width: 95%;
+}
+
+.skill-progress.css {
+    --skill-width: 90%;
+}
+
+.skill-progress.javascript {
+    --skill-width: 80%;
+}
+
+.skill-progress.web-design {
+    --skill-width: 92%;
+}
+
+.skill-progress.graphic-design {
+    --skill-width: 88%;
+}
+
+
+/* Animation */
+
+@keyframes skillAnimation {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--skill-width);
+    }
+
+}
+
+
+/* Skill Description */
+
+.skill-card p {
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================
+   SKILLS RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 23px;
+    }
+
 }
