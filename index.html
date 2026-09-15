@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebSphere Innovations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">WebSphere Innovationst</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-text">WELCOME TO WEBSPHERE INNOVATIONST</p>
+
+            <h1>We Build Modern & Creative Websites</h1>
+
+            <p>
+                Professional web design and development solutions
+                for businesses, organizations and individuals.
+            </p>
+
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                 alt="Web development workspace">
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                 alt="Website coding">
+        </div>
+
+        <div class="section-content">
+            <h2>About Us</h2>
+
+            <p>
+                WebSphere Innovations is a creative digital company
+                focused on building attractive, responsive and
+                user-friendly websites.
+            </p>
+
+            <p>
+                We combine creativity and technology to help individuals
+                and businesses create a strong online presence.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="section services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Web Design</h3>
+                <p>
+                    Clean, modern and attractive website designs.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">⚙️</div>
+                <h3>Web Development</h3>
+                <p>
+                    Fast and responsive websites built with modern
+                    technologies.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🎨</div>
+                <h3>Graphic Design</h3>
+                <p>
+                    Professional flyers, posters, banners and digital
+                    graphics.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📱</div>
+                <h3>Social Media</h3>
+                <p>
+                    Creative content and management for your social
+                    media platforms.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+
+        <h2>Our Portfolio</h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80"
+                     alt="Website project">
+                <h3>Business Website</h3>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
+                     alt="Creative design project">
+                <h3>Creative Design</h3>
+            </div>
+
+            <div class="portfolio-card">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
+                     alt="Mobile website">
+                <h3>Mobile Website</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Have a project in mind? Contact us today.
+        </p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebSphere Innovations. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
