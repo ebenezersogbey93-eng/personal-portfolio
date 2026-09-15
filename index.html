@@ -260,7 +260,7 @@
     <div class="portfolio-container">
 
         <!-- Project 1 -->
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-project="business">
 
             <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80"
                  alt="Business Website">
@@ -283,10 +283,8 @@
 
                 <div class="project-buttons">
 
-                    <a href="https://github.com/ebenezersogbey93-eng/personal-portfolio"
-                       class="live-btn"
-                       target="_blank">
-                       Live Demo ↗
+                    <a href="#" class="live-btn view-project-btn" data-project="business">
+                       View Project ↗
                     </a>
 
                     <a href="https://github.com/ebenezersogbey93-eng/personal-portfolio"
@@ -303,7 +301,7 @@
 
 
         <!-- Project 2 -->
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-project="design">
 
             <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80"
                  alt="Creative Graphic Design">
@@ -326,7 +324,7 @@
 
                 <div class="project-buttons">
 
-                    <a href="#" class="live-btn" target="_blank">
+                    <a href="#" class="live-btn view-project-btn" data-project="design">
                         View Project ↗
                     </a>
 
@@ -342,7 +340,7 @@
 
 
         <!-- Project 3 -->
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-project="mobile">
 
             <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
                  alt="Mobile Website">
@@ -365,8 +363,8 @@
 
                 <div class="project-buttons">
 
-                    <a href="#" class="live-btn" target="_blank">
-                        Live Demo ↗
+                    <a href="#" class="live-btn view-project-btn" data-project="mobile">
+                        View Project ↗
                     </a>
 
                     <a href="#" class="github-btn" target="_blank">
@@ -382,6 +380,22 @@
     </div>
 
 </section>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="project-modal-content">
+            <button class="close-modal" type="button" aria-label="Close project details">×</button>
+
+            <div class="project-gallery" id="projectGallery"></div>
+
+            <div class="project-details">
+                <p class="project-modal-tag">Featured Project</p>
+                <h3 id="modalTitle">Project Title</h3>
+                <p id="modalDescription">Project description goes here.</p>
+                <div class="modal-tech" id="modalTech"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact -->
     <section id="contact" class="contact">
 
